@@ -7,6 +7,8 @@ app = Flask(__name__)
 app.config['MONGO_HOST'] = "ipraktikumtest_db_1"
 app.config['MONGO_USERNAME'] = "mberger"
 app.config['MONGO_PASSWORD'] = "12345"
+app.config['MONGO_CONNECT'] = True
+app.config['MONGO_DBNAME'] = "ios"
 mongo = PyMongo(app)
 
 WIKIPART = re.compile(r'([A-Z][a-z0-9_]+)')
