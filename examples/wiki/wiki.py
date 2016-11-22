@@ -4,7 +4,7 @@ import markdown2
 import re
 
 app = Flask(__name__)
-app.config['MONGO_HOST'] = "ipraktikumtest_db_1"
+app.config['MONGO_HOST'] = "db"
 app.config['MONGO_CONNECT'] = False
 app.config['MONGO_DBNAME'] = "ios"
 mongo = PyMongo(app)
